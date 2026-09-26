@@ -25,7 +25,7 @@ DNA Sequence Analyzer is a Python command-line project for basic DNA sequence an
 DNA-Sequence-Analyzer/
 ├── README.md
 ├── statement.md
-├── main.py
+├── DNA SEQUENCE.py
 ├── validation.py
 ├── menu.py
 ├── test_dna.py
