@@ -1,6 +1,4 @@
 #DNA Sequence Analyzer
-#----------------------
-#This is a beginner-friendly Python project that analyzes a DNA sequence.
 
 CODON_TABLE = {
     'UUU': 'Phe', 'UUC': 'Phe', 'UUA': 'Leu', 'UUG': 'Leu',
