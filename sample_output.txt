@@ -1,0 +1,9 @@
+Sample run
+===========
+Input: ATGC
+
+Nucleotide Counts: {'A': 1, 'T': 1, 'G': 1, 'C': 1}
+GC Content: 50.0 %
+Complementary Strand: TACG
+Reverse Complement: GCAT
+mRNA Sequence: AUGC
