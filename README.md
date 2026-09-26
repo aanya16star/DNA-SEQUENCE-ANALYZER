@@ -1,7 +1,6 @@
 # DNA-SEQUENCE-ANALYZER
-python interface for analyzing large datasets of DNA sequences.
+ DNA Sequence Analyzer is a Python project that performs basic analysis of DNA sequences using a simple command-line interface within seconds without requiring much human effort.It provides features such as nucleotide counting, GC content calculation, DNA transcription, protein translation, and pattern searching.
  
-
 ## Project Overview
 DNA Sequence Analyzer is a Python command-line project for basic DNA sequence analysis which can help in analyzing large datasets within seconds.Its main application is there in the healthcare industry. Its functions includes counting nucleotides, calculating GC content, finding complements, transcribing DNA to mRNA, translating mRNA to protein, and searching for DNA patterns.
 
@@ -28,11 +27,7 @@ DNA-Sequence-Analyzer/
 ├── statement.md
 ├── main.py
 ├── validation.py
-├── analysis.py
-├── genetics.py
-├── pattern_search.py
 ├── menu.py
-├── constants.py
 ├── test_dna.py
 ├── sample_output.txt
 └── screenshots
