@@ -1,0 +1,11 @@
+def display_menu():
+    print("\n===== DNA SEQUENCE ANALYZER =====")
+    print("1. Enter/Load DNA sequence")
+    print("2. Show nucleotide count")
+    print("3. Show GC content")
+    print("4. Show complementary strand")
+    print("5. Show reverse complement strand")
+    print("6. Transcribe to mRNA")
+    print("7. Translate to Protein")
+    print("8. Search for a pattern")
+    print("9. Exit")
