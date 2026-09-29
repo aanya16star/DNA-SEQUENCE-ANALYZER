@@ -21,11 +21,14 @@ CODON_TABLE = {
 
 COMPLEMENT = {'A': 'T', 'T': 'A', 'G': 'C', 'C': 'G'}
 
+# TO CHECK IF THE GIVEN SEQUENCE CONTAINS ONLY A,T,C,G
 def is_valid_dna(sequence):
     for base in sequence:
         if base not in 'ATGC':
             return False
         return True
+
+# TO COUNT THE NUMBER OF NUCLEOTIDES
 def count_nucleotides(sequence):
     return {
         'A': sequence.count('A'),
@@ -34,6 +37,7 @@ def count_nucleotides(sequence):
         'C': sequence.count('C'),
     }
 
+# TO CALCULATE THE GC CONTENT
 def gc_content(sequence):
     g = sequence.count('G')
     c = sequence.count('C')
@@ -42,15 +46,19 @@ def gc_content(sequence):
         return 0.0
     return round((g + c) / total * 100, 2)
 
+# FOR GENERATING THE COMPLEMENTARY STRAND
 def complementary_strand(sequence):
     return ''.join(COMPLEMENT[base] for base in sequence)
 
+# FOR GENERATING THE REVERSE COMPLEMENT
 def reverse_complement(sequence):
     return complementary_strand(sequence)[::-1]
 
+# TRANSCRIPTION
 def transcribe_to_mrna(sequence):
     return sequence.replace('T', 'U')
 
+# TRANSLATION
 def translate_to_protein(mrna_sequence):
     protein = []
     for i in range(0, len(mrna_sequence) - 2, 3):
@@ -61,6 +69,7 @@ def translate_to_protein(mrna_sequence):
         protein.append(amino_acid)
     return '-'.join(protein)
 
+# FOR PATTERN DISPLAY
 def search_pattern(sequence, pattern):
     positions = []
     pattern_len = len(pattern)
@@ -69,6 +78,7 @@ def search_pattern(sequence, pattern):
             positions.append(i)
     return positions
 
+# MENU 
 def display_menu():
     print("\n===== DNA SEQUENCE ANALYZER =====")
     print("1. Enter/Load DNA sequence")
